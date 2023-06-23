@@ -10,7 +10,6 @@ export default function ShareButton() {
     const [showShare, setShowShare] = useState(false)
     const handleClick = () => {
         setShowShare(!showShare);
-        console.log("clicado")
     }
 
     return (

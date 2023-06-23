@@ -3,21 +3,24 @@
     border-radius: 50%;
     width: 5ch;
     height: 5ch;
-    margin-left: 10rem;
     display: grid;
     place-content: center;
-    
+    transition: 0.4s;
+    cursor: pointer;
+
     img {
         width: 3ch;
         height: 3ch;
     }
+}
 
-
+.shareButton:hover {
+    transition: 0.4s;
+    background-color: var(--Grayish-Blue);
 }
 
 .socialMedias {
     position: relative;
-
     top: -7rem;
     background-color: var(--Very-Dark-Grayish-Blue);
     display: flex;
@@ -27,11 +30,23 @@
     padding: 1rem 2rem;
     border-radius: .5rem;
     gap: 1rem;
+    cursor: pointer;
 
-    p{
+    p {
         color: var(--Desaturated-Dark-Blue);
     }
+
+    img {
+        transition: 0.4s;
+    }
+
+    img:hover {
+        transition: 0.4s;
+        transform: scale(1.1, 1.1);
+
+    }
 }
+
 
 .triangle {
     position: relative;
@@ -43,4 +58,19 @@
     border-width: 20px 17.5px 0 17.5px;
     border-color: var(--Very-Dark-Grayish-Blue) transparent transparent transparent;
 
+}
+
+@media screen and (min-width: 320px) and (max-width: 546px) {
+    .socialMedias {
+        top: 3rem;
+        width: 20rem;
+        left: -8rem;
+    }
+
+    .triangle {
+    border-width: 0 17.5px 20px 17.5px;
+    border-color: transparent transparent var(--Very-Dark-Grayish-Blue) transparent;
+    top: 3.5rem;
+    left: 8.5rem;
+    }
 }

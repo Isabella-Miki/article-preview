@@ -22,6 +22,7 @@
 }
 
 .mainCard {
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,9 +55,8 @@
 
 .author {
     margin-top: 1em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
 
     .authorImg {
         width: 3rem;
@@ -68,5 +68,32 @@
     .name {
         font-weight: 700;
         color: var(--Very-Dark-Grayish-Blue);
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+    
+    .mainCard {
+        flex-direction: column;
+
+        .drawer {
+            margin: 0px;
+            width: max-content;
+        }
+
+    }
+
+    .textSection {
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
