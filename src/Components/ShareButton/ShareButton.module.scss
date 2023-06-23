@@ -1,0 +1,46 @@
+.shareButton {
+    background-color: var(--Desaturated-Dark-Blue);
+    border-radius: 50%;
+    width: 5ch;
+    height: 5ch;
+    margin-left: 10rem;
+    display: grid;
+    place-content: center;
+    
+    img {
+        width: 3ch;
+        height: 3ch;
+    }
+
+
+}
+
+.socialMedias {
+    position: relative;
+
+    top: -7rem;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    gap: 1rem;
+
+    p{
+        color: var(--Desaturated-Dark-Blue);
+    }
+}
+
+.triangle {
+    position: relative;
+    width: 0;
+    height: 0;
+    top: -2rem;
+    left: 6.5rem;
+    border-style: solid;
+    border-width: 20px 17.5px 0 17.5px;
+    border-color: var(--Very-Dark-Grayish-Blue) transparent transparent transparent;
+
+}
